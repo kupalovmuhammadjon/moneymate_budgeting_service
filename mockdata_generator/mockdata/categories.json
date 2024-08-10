@@ -1,0 +1,82 @@
+[
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b1a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174000",
+      "name": "Salary",
+      "type": "income",
+      "created_at": "2024-08-10T09:00:00Z",
+      "updated_at": "2024-08-10T09:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b2a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174001",
+      "name": "Groceries",
+      "type": "expense",
+      "created_at": "2024-08-09T08:00:00Z",
+      "updated_at": "2024-08-09T08:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b3a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174002",
+      "name": "Freelance",
+      "type": "income",
+      "created_at": "2024-08-08T07:00:00Z",
+      "updated_at": "2024-08-08T07:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b4a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174003",
+      "name": "Dining Out",
+      "type": "expense",
+      "created_at": "2024-08-07T06:00:00Z",
+      "updated_at": "2024-08-07T06:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b5a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174004",
+      "name": "Bonus",
+      "type": "income",
+      "created_at": "2024-08-06T05:00:00Z",
+      "updated_at": "2024-08-06T05:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b6a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174005",
+      "name": "Entertainment",
+      "type": "expense",
+      "created_at": "2024-08-05T04:00:00Z",
+      "updated_at": "2024-08-05T04:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b7a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174006",
+      "name": "Cash Gift",
+      "type": "income",
+      "created_at": "2024-08-04T03:00:00Z",
+      "updated_at": "2024-08-04T03:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b8a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174007",
+      "name": "Utilities",
+      "type": "expense",
+      "created_at": "2024-08-03T02:00:00Z",
+      "updated_at": "2024-08-03T02:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b9a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174008",
+      "name": "Online Courses",
+      "type": "expense",
+      "created_at": "2024-08-02T01:00:00Z",
+      "updated_at": "2024-08-02T01:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3b0a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174009",
+      "name": "Project Payments",
+      "type": "income",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    }
+]

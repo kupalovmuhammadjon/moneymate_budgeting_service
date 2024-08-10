@@ -1,0 +1,134 @@
+[
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d1a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174000",
+      "name": "Vacation Fund",
+      "target_amount": 2000.00,
+      "current_amount": 1500.00,
+      "deadline": "2024-12-31T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-10T09:00:00Z",
+      "updated_at": "2024-08-10T09:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d2a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174001",
+      "name": "Emergency Savings",
+      "target_amount": 5000.00,
+      "current_amount": 5000.00,
+      "deadline": "2024-11-30T23:59:59Z",
+      "status": "achieved",
+      "created_at": "2024-08-09T08:00:00Z",
+      "updated_at": "2024-08-09T08:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d3a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174002",
+      "name": "New Laptop",
+      "target_amount": 1200.00,
+      "current_amount": 800.00,
+      "deadline": "2024-10-15T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-08T07:00:00Z",
+      "updated_at": "2024-08-08T07:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d4a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174003",
+      "name": "Debt Repayment",
+      "target_amount": 3000.00,
+      "current_amount": 1200.00,
+      "deadline": "2024-09-30T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-07T06:00:00Z",
+      "updated_at": "2024-08-07T06:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d5a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174004",
+      "name": "New Bike",
+      "target_amount": 500.00,
+      "current_amount": 500.00,
+      "deadline": "2024-08-31T23:59:59Z",
+      "status": "achieved",
+      "created_at": "2024-08-06T05:00:00Z",
+      "updated_at": "2024-08-06T05:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d6a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174005",
+      "name": "Home Renovation",
+      "target_amount": 10000.00,
+      "current_amount": 4500.00,
+      "deadline": "2024-12-31T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-05T04:00:00Z",
+      "updated_at": "2024-08-05T04:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d7a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174006",
+      "name": "Education Fund",
+      "target_amount": 2500.00,
+      "current_amount": 2000.00,
+      "deadline": "2024-11-30T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-04T03:00:00Z",
+      "updated_at": "2024-08-04T03:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d8a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174007",
+      "name": "Gift Fund",
+      "target_amount": 1000.00,
+      "current_amount": 600.00,
+      "deadline": "2024-10-01T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-03T02:00:00Z",
+      "updated_at": "2024-08-03T02:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d9a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174008",
+      "name": "Fitness Equipment",
+      "target_amount": 800.00,
+      "current_amount": 200.00,
+      "deadline": "2024-09-15T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-02T01:00:00Z",
+      "updated_at": "2024-08-02T01:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d0a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174009",
+      "name": "Emergency Fund",
+      "target_amount": 3000.00,
+      "current_amount": 500.00,
+      "deadline": "2024-12-31T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d1b",
+      "user_id": "123e4567-e89b-12d3-a456-426614174000",
+      "name": "Travel Fund",
+      "target_amount": 1500.00,
+      "current_amount": 1200.00,
+      "deadline": "2024-10-31T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3d2b",
+      "user_id": "123e4567-e89b-12d3-a456-426614174001",
+      "name": "Laptop Upgrade",
+      "target_amount": 2000.00,
+      "current_amount": 500.00,
+      "deadline": "2024-11-01T23:59:59Z",
+      "status": "in_progress",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    }
+]

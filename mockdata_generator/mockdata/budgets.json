@@ -1,0 +1,134 @@
+[
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c1a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174000",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b1a",
+      "amount": 3000.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c2a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174001",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b2a",
+      "amount": 500.00,
+      "period": "weekly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-07T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c3a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174002",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b3a",
+      "amount": 1500.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c4a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174003",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b4a",
+      "amount": 200.00,
+      "period": "daily",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-01T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c5a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174004",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b5a",
+      "amount": 1000.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c6a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174005",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b6a",
+      "amount": 400.00,
+      "period": "weekly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-07T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c7a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174006",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b7a",
+      "amount": 250.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c8a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174007",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b8a",
+      "amount": 600.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c9a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174008",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b9a",
+      "amount": 100.00,
+      "period": "daily",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-01T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c0a",
+      "user_id": "123e4567-e89b-12d3-a456-426614174009",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b0a",
+      "amount": 800.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c1b",
+      "user_id": "123e4567-e89b-12d3-a456-426614174000",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b1b",
+      "amount": 350.00,
+      "period": "weekly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-07T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    },
+    {
+      "_id": "64d7a2b8b99f3e2d8a9f3c2b",
+      "user_id": "123e4567-e89b-12d3-a456-426614174001",
+      "category_id": "64d7a2b8b99f3e2d8a9f3b2b",
+      "amount": 450.00,
+      "period": "monthly",
+      "start_date": "2024-08-01T00:00:00Z",
+      "end_date": "2024-08-31T23:59:59Z",
+      "created_at": "2024-08-01T00:00:00Z",
+      "updated_at": "2024-08-01T00:00:00Z"
+    }
+]
