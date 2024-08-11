@@ -21,12 +21,39 @@ func NewTransactionRepo(db *mongo.Database, log logger.ILogger) *transactionRepo
 	}
 }
 
-func (t *transactionRepo) Create(context.Context, *pb.CreateTransaction) (*pb.Transaction, error)
-func (t *transactionRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Transaction, error)
-func (t *transactionRepo) GetAll(context.Context, *pb.TransactionFilter) (*pb.Transactions, error)
-func (t *transactionRepo) Update(context.Context, *pb.Transaction) (*pb.Transaction, error)
-func (t *transactionRepo) Delete(context.Context, *pb.PrimaryKey) error
-func (t *transactionRepo) GenerateSpendingReport(context.Context, *pb.PrimaryKey) (*pb.Spendings, error)
-func (t *transactionRepo) GenerateIncomeReport(context.Context, *pb.PrimaryKey) (*pb.Incomes, error)
-func (t *transactionRepo) GenerateBudgetPerformanceReport(context.Context, *pb.PrimaryKey) (*pb.BugetPerformance, error)
-func (t *transactionRepo) GenerateGoalProgressReport(context.Context, *pb.PrimaryKey) (*pb.GoalProgress, error)
+func (t *transactionRepo) Create(context.Context, *pb.CreateTransaction) (*pb.Transaction, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Transaction, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) GetAll(context.Context, *pb.TransactionFilter) (*pb.Transactions, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) Update(context.Context, *pb.Transaction) (*pb.Transaction, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) Delete(context.Context, *pb.PrimaryKey) error{
+
+	return nil
+}
+func (t *transactionRepo) GenerateSpendingReport(context.Context, *pb.PrimaryKey) (*pb.Spendings, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) GenerateIncomeReport(context.Context, *pb.PrimaryKey) (*pb.Incomes, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) GenerateBudgetPerformanceReport(context.Context, *pb.PrimaryKey) (*pb.BugetPerformance, error){
+
+	return nil, nil
+}
+func (t *transactionRepo) GenerateGoalProgressReport(context.Context, *pb.PrimaryKey) (*pb.GoalProgress, error){
+
+	return nil, nil
+}

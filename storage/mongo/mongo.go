@@ -12,7 +12,7 @@ import (
 
 func ConnectMongoDB(ctx context.Context, cfg *configs.Config) (*mongo.Database, error) {
 
-	url := fmt.Sprintf(`mongo://%s:%s`, cfg.MongoDBHost, cfg.MongoDBPort)
+	url := fmt.Sprintf("mongodb://%s:%s", cfg.MongoDBHost, cfg.MongoDBPort)
 
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI(url))
 	if err != nil {

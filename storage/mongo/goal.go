@@ -21,8 +21,23 @@ func NewGoalRepo(db *mongo.Database, log logger.ILogger) *goalRepo {
 	}
 }
 
-func (g *goalRepo) Create(context.Context, *pb.CreateGoal) (*pb.Goal, error)
-func (g *goalRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Goal, error)
-func (g *goalRepo) GetAll(context.Context, *pb.GoalFilter) (*pb.Goals, error)
-func (g *goalRepo) Update(context.Context, *pb.Goal) (*pb.Goal, error)
-func (g *goalRepo) Delete(context.Context, *pb.PrimaryKey) error
+func (g *goalRepo) Create(context.Context, *pb.CreateGoal) (*pb.Goal, error){
+
+	return nil, nil
+}
+func (g *goalRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Goal, error){
+
+	return nil, nil
+}
+func (g *goalRepo) GetAll(context.Context, *pb.GoalFilter) (*pb.Goals, error){
+
+	return nil, nil
+}
+func (g *goalRepo) Update(context.Context, *pb.Goal) (*pb.Goal, error){
+
+	return nil, nil
+}
+func (g *goalRepo) Delete(context.Context, *pb.PrimaryKey) error{
+
+	return nil
+}

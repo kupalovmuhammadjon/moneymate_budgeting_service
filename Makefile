@@ -51,4 +51,4 @@ proto-gen:
 	@./scripts/gen-proto.sh $(CURRENT_DIR)
 
 test:
-	@go test ./storage/postgres
+	@go test ./storage/mongo

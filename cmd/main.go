@@ -4,6 +4,7 @@ import (
 	"budgeting_service/configs"
 	"budgeting_service/grpc"
 	"budgeting_service/pkg/logger"
+	"budgeting_service/services"
 	"budgeting_service/storage"
 	"context"
 
@@ -19,25 +20,27 @@ func main() {
 
 	storage, err := storage.NewIStorage(context.Background(), cfg, log)
 	if err != nil {
-		log.Panic("error while creating storage in main", logger.Error(err))
+		log.Panic("error while creating storage ", logger.Error(err))
 		return
 	}
 	defer storage.Close()
 
+	iServiceManager := services.NewIServiceManager(storage, log)
+
 	listener, err := net.Listen("tcp",
-		cfg.UserServiceGrpcHost+cfg.UserServiceGrpcPort,
+		cfg.BudgetingServiceGrpcHost+cfg.BudgetingServiceGrpcPort,
 	)
 	if err != nil {
-		log.Panic("error while creating listener for user service", logger.Error(err))
+		log.Panic("error while creating listener for budgeting service", logger.Error(err))
 		return
 	}
 	defer listener.Close()
 
-	server := grpc.SetUpServer(storage, log)
+	server := grpc.SetUpServer(iServiceManager, storage, log)
 
-	fmt.Printf("User service is listening on port %s...\n",
-		cfg.UserServiceGrpcHost+cfg.UserServiceGrpcPort)
+	fmt.Printf("Budgeting service is listening on port %s...\n",
+		cfg.BudgetingServiceGrpcHost+cfg.BudgetingServiceGrpcPort)
 	if err := server.Serve(listener); err != nil {
-		log.Fatal("Error with listening user server", logger.Error(err))
+		log.Fatal("Error with listening budgeting server", logger.Error(err))
 	}
 }

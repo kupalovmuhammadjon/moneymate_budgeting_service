@@ -21,8 +21,23 @@ func NewCategoryRepo(db *mongo.Database, log logger.ILogger) *categoryRepo {
 	}
 }
 
-func (c *categoryRepo) Create(context.Context, *pb.CreateCategory) (*pb.Category, error)
-func (c *categoryRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Category, error)
-func (c *categoryRepo) GetAll(context.Context, *pb.CategoryFilter) (*pb.Categories, error)
-func (c *categoryRepo) Update(context.Context, *pb.Category) (*pb.Category, error)
-func (c *categoryRepo) Delete(context.Context, *pb.PrimaryKey) error
+func (c *categoryRepo) Create(context.Context, *pb.CreateCategory) (*pb.Category, error){
+
+	return nil, nil
+}
+func (c *categoryRepo) GetById(context.Context, *pb.PrimaryKey) (*pb.Category, error){
+
+	return nil, nil
+}
+func (c *categoryRepo) GetAll(context.Context, *pb.CategoryFilter) (*pb.Categories, error){
+
+	return nil, nil
+}
+func (c *categoryRepo) Update(context.Context, *pb.Category) (*pb.Category, error){
+
+	return nil, nil
+}
+func (c *categoryRepo) Delete(context.Context, *pb.PrimaryKey) error{
+
+	return nil
+}

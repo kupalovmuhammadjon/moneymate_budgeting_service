@@ -20,10 +20,10 @@ type IStorage interface {
 }
 
 type IAccountRepo interface {
-	Create(context.Context, *pb.CreateAccount) (*pb.Account, error)
+	Create(context.Context, *pb.CreateAccount) (string, error)
 	GetById(context.Context, *pb.PrimaryKey) (*pb.Account, error)
 	GetAll(context.Context, *pb.AccountFilter) (*pb.Accounts, error)
-	Update(context.Context, *pb.Account) (*pb.Account, error)
+	Update(context.Context, *pb.Account) error
 	Delete(context.Context, *pb.PrimaryKey) error
 }
 
