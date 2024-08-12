@@ -10,7 +10,7 @@ type CreateGoal struct {
 }
 
 type Goal struct {
-	ID            string  `json:"id" bson:"_id,omitempty"` // Use `bson:"_id,omitempty"` for MongoDB ID field
+	ID            string  `json:"id" bson:"_id,omitempty"` 
 	UserID        string  `json:"user_id" bson:"user_id"`
 	Name          string  `json:"name" bson:"name"`
 	TargetAmount  float64 `json:"target_amount" bson:"target_amount"`

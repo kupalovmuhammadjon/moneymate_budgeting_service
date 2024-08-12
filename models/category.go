@@ -7,7 +7,7 @@ type CreateCategory struct {
 }
 
 type Category struct {
-	ID        string `json:"id" bson:"_id,omitempty"` // Use `bson:"_id,omitempty"` for MongoDB ID field
+	ID        string `json:"id" bson:"_id,omitempty"` 
 	UserID    string `json:"user_id" bson:"user_id"`
 	Name      string `json:"name" bson:"name"`
 	Type      string `json:"type" bson:"type"`

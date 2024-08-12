@@ -12,6 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 type budgetRepo struct {
@@ -104,13 +105,22 @@ func (b *budgetRepo) GetAll(ctx context.Context, request *pb.BudgetFilter) (*pb.
 		filter["period"] = request.Period
 	}
 	if request.StartDate != "" && request.EndDate != "" {
-		filter["start_date"] = bson.M{"$gte": request.StartDate}
-		filter["end_date"] = bson.M{"$lte": request.EndDate}
+		filter["$and"] = bson.A{
+			bson.M{"start_date": bson.M{"$gte": request.StartDate}},
+			bson.M{"end_date": bson.M{"$lte": request.EndDate}},
+		}
+	}
+	
+	offset := int64((request.Page - 1) * 10)
+	limit := int64(request.Limit)
+	options := &options.FindOptions{
+		Skip:  &offset,
+		Limit: &limit,
 	}
 
-	cursor, err := b.db.Collection("budgets").Find(ctx, filter)
+	cursor, err := b.db.Collection("budgets").Find(ctx, filter, options)
 	if err != nil {
-		b.log.Error("Error while getting all budgets in storage layer")
+		b.log.Error("Error while getting all budgets in storage layer", logger.Error(err))
 		return nil, err
 	}
 	defer cursor.Close(ctx)
@@ -120,7 +130,7 @@ func (b *budgetRepo) GetAll(ctx context.Context, request *pb.BudgetFilter) (*pb.
 		var model models.Budget
 		err = cursor.Decode(&model)
 		if err != nil {
-			b.log.Error("Error while getting all budgets in storage layer")
+			b.log.Error("Error while decoding budget in storage layer", logger.Error(err))
 			return nil, err
 		}
 
@@ -137,7 +147,7 @@ func (b *budgetRepo) GetAll(ctx context.Context, request *pb.BudgetFilter) (*pb.
 		})
 	}
 	if err = cursor.Err(); err != nil {
-		b.log.Error("Error while getting all budgets in storage layer")
+		b.log.Error("Error while iterating over cursor in storage layer", logger.Error(err))
 		return nil, err
 	}
 

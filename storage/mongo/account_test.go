@@ -74,7 +74,6 @@ func TestGetById(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	fmt.Println(id)
 
 	reqGetById := &pb.PrimaryKey{Id: id}
 	account, err := repo.GetById(context.Background(), reqGetById)

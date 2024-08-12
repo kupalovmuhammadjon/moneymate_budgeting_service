@@ -24,7 +24,13 @@ type serviceManager struct {
 
 func NewIServiceManager(storage storage.IStorage, log logger.ILogger) IServiceManager {
 
-	return &serviceManager{}
+	return &serviceManager{
+		accountService:     NewAccountService(storage, log),
+		budgetService:      NewBudgetService(storage, log),
+		categoryService:    NewCategoryService(storage, log),
+		goalService:        NewGoalService(storage, log),
+		transactionService: NewTransactionService(storage, log),
+	}
 }
 
 func (s *serviceManager) AccountService() pb.AccountServiceServer{

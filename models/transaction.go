@@ -11,7 +11,7 @@ type CreateTransaction struct {
 }
 
 type Transaction struct {
-	ID          string  `json:"id" bson:"_id,omitempty"` // Use `bson:"_id,omitempty"` for MongoDB ID field
+	ID          string  `json:"id" bson:"_id,omitempty"` 
 	UserID      string  `json:"user_id" bson:"user_id"`
 	AccountID   string  `json:"account_id" bson:"account_id"`
 	CategoryID  string  `json:"category_id" bson:"category_id"`
