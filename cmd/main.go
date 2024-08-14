@@ -41,7 +41,7 @@ func main() {
 	"notification_created"}, iServiceManager)
 
 	listener, err := net.Listen("tcp",
-		cfg.BudgetingServiceGrpcHost+cfg.BudgetingServiceGrpcPort,
+		cfg.BudgetingServiceGrpcPort,
 	)
 	if err != nil {
 		log.Panic("error while creating listener for budgeting service", logger.Error(err))

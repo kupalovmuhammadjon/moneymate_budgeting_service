@@ -134,7 +134,7 @@ func newKafkaProducer() (sarama.SyncProducer, error) {
 	config.Producer.Return.Successes = true
 	sarama.Logger = log.New(os.Stdout, "[sarama] ", log.LstdFlags)
 
-	producer, err := sarama.NewSyncProducer([]string{"localhost:9092"}, config)
+	producer, err := sarama.NewSyncProducer([]string{":29092"}, config)
 	if err != nil {
 		return nil, err
 	}
@@ -147,7 +147,7 @@ func newKafkaConsumer() (sarama.ConsumerGroup, error) {
 	config.Producer.Return.Successes = true
 	sarama.Logger = log.New(os.Stdout, "[sarama] ", log.LstdFlags)
 
-	consumer, err := sarama.NewConsumerGroup([]string{"localhost:9092"}, "budgeting-service", config)
+	consumer, err := sarama.NewConsumerGroup([]string{":29092"}, "budgeting-service", config)
 	if err != nil {
 		return nil, err
 	}
