@@ -23,6 +23,7 @@ func NewTransactionService(storage storage.IStorage, log logger.ILogger) *transa
 
 func (s *transactionService) Create(ctx context.Context, req *pb.CreateTransaction) (*pb.Transaction, error) {
 
+	s.log.Info("Create transaction request received", logger.Any("user_id", req.UserId))
 	result, err := s.storage.Transactions().Create(ctx, req)
 	if err != nil {
 		s.log.Error("Error while creating transaction in service layer", logger.Error(err))

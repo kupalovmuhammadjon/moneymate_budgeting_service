@@ -4,12 +4,15 @@ import (
 	"budgeting_service/configs"
 	"budgeting_service/grpc"
 	"budgeting_service/pkg/logger"
+	"budgeting_service/pkg/messege_brokers/kafka"
 	"budgeting_service/services"
 	"budgeting_service/storage"
 	"context"
 
 	"fmt"
 	"net"
+
+	"go.uber.org/zap"
 )
 
 func main() {
@@ -26,6 +29,16 @@ func main() {
 	defer storage.Close()
 
 	iServiceManager := services.NewIServiceManager(storage, log)
+
+	iKafka, err := kafka.NewIKafka()
+	if err != nil {
+		log.Fatal("Failed to create Kafka producer and consumer", zap.Error(err))
+		return
+	}
+	defer iKafka.Close()
+
+	go iKafka.ConsumeMessages([]string{"transaction_created", "budget_updated", "goal_progress_updated", 
+	"notification_created"}, iServiceManager)
 
 	listener, err := net.Listen("tcp",
 		cfg.BudgetingServiceGrpcHost+cfg.BudgetingServiceGrpcPort,
